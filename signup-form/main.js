@@ -8,7 +8,7 @@ const confirmPwd = form.querySelector("input[name='confirm-pwd']");
 const passwordMessage = form.querySelector(".password-message");
 const submit = form.querySelector(".submit")
 
-
+const inputs = [form, firstName, lastName, email, phone, password, confirmPwd]
 
 function nameValidation(name) {
     let re = /[a-zA-z]+/;
@@ -53,4 +53,10 @@ submit.addEventListener("click", (e) => {
     e.preventDefault();
 });
 
-``
+inputs.forEach((field) => {
+    field.addEventListener("input", (e) => {
+        if (field.classList.contains("error")) {
+            field.classList.remove("error");
+        }
+    })
+})
