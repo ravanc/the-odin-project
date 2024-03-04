@@ -14,6 +14,7 @@ svg {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: min-content min-content 1fr;
+    height: 100vh;
     /* position: relative; */
 }
 
