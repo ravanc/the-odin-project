@@ -10,14 +10,18 @@ let game = (function() {
 
     let counter = 0;
     let gameState = true;
-    let playerXname;
-    let playerOname;
+    let playerXname = "Player X";
+    let playerOname = "Player O";
 
     dialog.showModal();
 
     startGame.addEventListener("click", () => {
-        playerXname = inputX.value;
-        playerOname = inputO.value;
+        if (inputX.value) {
+            playerXname = inputX.value;
+        }
+        if (inputO.value) {
+            playerOname = inputO.value;
+        }
         dialog.close();
     });
 
