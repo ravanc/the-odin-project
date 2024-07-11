@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="background-shape"></div>
+    <header>
+      <div class="header-container">
+        <div class="profile">
+          <picture>
+            <source
+              media="(max-width: 799px)"
+              srcset="./assets/headshot-mobile.png"
+            />
+            <source media="(min-width: 800px)" srcset="./assets/headshot.png" />
+            <img src="./assets/headshot.png" class="headshot" />
+          </picture>
+          <h1 class="name">Ravan Chan</h1>
+        </div>
+        <div class="excerpt">
+          <h2 class="about title">About me</h2>
+          <p class="about subtitle">
+            Year 1 student at National University of Singapore pursuing a degree
+            in Computer Science. Interested in entrepreneurship, geopolitics and
+            reading in general.
+          </p>
+          <p class="about subtitle">
+            Currently working on front-end development skills, and am seeking to
+            move onto back-end and artificial intelligence soon.
+          </p>
+          <div class="socials">
+            <a href="https://github.com/ravanc" target="_blank">
+              <img src="assets/github.svg" class="social-icon" />
+            </a>
+            <a href="https://linkedin.com/in/ravan-chan" target="_blank">
+              <img src="assets/linkedin.svg" class="social-icon" />
+            </a>
+            <a href="mailto:ravan@u.nus.edu" target="_blank">
+              <img src="assets/email.svg" class="social-icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="title">My Work</h1>
+      <div class="project-cards">
+        <div class="project-card">
+          <img src="./assets/projects/sign-up.png" class="project-thumbnail" />
+          <div class="project-details">
+            <h3 class="project-name">Sign-up Page</h3>
+            <div class="project-description">
+              An introductory project to HTML and CSS as part of The Odin
+              Project.
+            </div>
+            <div class="project-links">
+              <img src="./assets/github.svg" class="project-link" />
+              <img src="./assets/open.svg" class="project-link" />
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="./assets/projects/calculator.png"
+            class="project-thumbnail"
+          />
+          <div class="project-details">
+            <h3 class="project-name">Javascript Calculator</h3>
+            <div class="project-description">
+              The final project for the Foundations Course for The Odin Project.
+              Took 2 iterations to get the logic straight, but it is still not
+              perfect yet and I have come to accept that.
+            </div>
+            <div class="project-links">
+              <img src="./assets/github.svg" class="project-link" />
+              <img src="./assets/open.svg" class="project-link" />
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="./assets/projects/admin-dashboard.png"
+            class="project-thumbnail"
+          />
+          <div class="project-details">
+            <h3 class="project-name">Admin Dashboard</h3>
+            <div class="project-description">
+              Another HTML project as part of the intermediate HTML and CSS
+              course. It was very satisfying to create.
+            </div>
+            <div class="project-links">
+              <img src="./assets/github.svg" class="project-link" />
+              <img src="./assets/open.svg" class="project-link" />
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./assets/projects/todo.png" class="project-thumbnail" />
+          <div class="project-details">
+            <h3 class="project-name">To-do List</h3>
+            <div class="project-description">
+              A rather difficult project to complete, and it took me over a week
+              to think and look for inspiration on how to complete the logic
+              behind it. The answer was a pub-sub design pattern.
+            </div>
+            <div class="project-links">
+              <img src="./assets/github.svg" class="project-link" />
+              <img src="./assets/open.svg" class="project-link" />
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img
+            src="./assets/projects/studenthrive.png"
+            class="project-thumbnail"
+          />
+          <div class="project-details">
+            <h3 class="project-name">StudenThrive</h3>
+            <div class="project-description">
+              The product for Geekout 2024 organised for GovTech. Programming
+              the front-end overnight was not fun, but it paid off by winning
+              3rd Place when I did not think we could.
+            </div>
+            <div class="project-links">
+              <img src="./assets/github.svg" class="project-link" />
+              <img src="./assets/open.svg" class="project-link" />
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="./assets/projects/ecopick.png" class="project-thumbnail" />
+          <div class="project-details">
+            <h3 class="project-name">EcoPick</h3>
+            <div class="project-description">
+              The product for DSTA CODE_EXP 2024. Having to learn, forget and
+              re-learn React and React Native over the span of 2 months was
+              definitely an intellectual challenge, but a proof that you will
+              achieve something when you put your mind to it.
+            </div>
+            <div class="project-links">
+              <img src="./assets/github.svg" class="project-link" />
+              <img src="./assets/open.svg" class="project-link" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="contact-details">
+        <h2 class="contact title">Let's chat!</h2>
+        <p class="contact subtitle">
+          Happy to talk about anything interesting or any opportunities
+          available.
+        </p>
+        <div class="socials">
+          <a href="https://github.com/ravanc" target="_blank">
+            <img src="assets/github.svg" class="social-icon" />
+          </a>
+          <a href="https://linkedin.com/in/ravan-chan" target="_blank">
+            <img src="assets/linkedin.svg" class="social-icon" />
+          </a>
+          <a href="mailto:ravan@u.nus.edu" target="_blank">
+            <img src="assets/email.svg" class="social-icon" />
+          </a>
+        </div>
+      </div>
+      <picture>
+        <source
+          media="(max-width: 799px)"
+          srcset="./assets/footer-photo-mobile.png"
+        />
+        <source media="(min-width: 800px)" srcset="./assets/footer-photo.png" />
+        <img src="./assets/footer-photo.png" class="footer-photo" />
+      </picture>
+    </footer>
+  </body>
+</html>

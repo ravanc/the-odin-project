@@ -1,0 +1,72 @@
+*,  *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', system-ui;
+}
+
+.container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    width: min-content;
+}
+
+.box {
+    border: 1px solid black;
+    height: 1rem;
+    width: 1rem;
+}
+
+.box.filled {
+    background-color: brown;
+}
+
+.ships {
+    width: 12rem;
+    height: 12rem;
+}
+
+.ships, .ships > tr, .ship-row {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.ship-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.ship-box {
+    border: 1px solid black;
+    height: 1rem;
+    width: 1rem;
+    background-color: blue;
+}
+
+.rotate-button {
+    margin-left: auto;
+}
+
+.rotate-button:hover {
+    cursor: pointer;
+}

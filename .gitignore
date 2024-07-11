@@ -1,3 +1,2 @@
-webpack-demo
-./restaurant-page/node_modules/
-./todolist/node_modules/
+.vscode
+node_modules/
