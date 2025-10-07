@@ -30,7 +30,8 @@ const Gameboard = function () {
 
         for (let i = -1; i < length + 1; i++) {
           for (let j = -1; j < 2; j++) {
-            this.grid[y + j][x + 1] = ship.deadzone;
+            if (y + j >= 0 && y + j <= 9 && x + i >= 0 && x + i <= 9)
+              if (this.grid[y + j][x + i] !== null) return;
           }
         }
 
@@ -42,6 +43,13 @@ const Gameboard = function () {
 
         for (let i = 0; i < length; i++) {
           if (this.grid[y + i][x] !== null) return;
+        }
+
+        for (let i = -1; i < length + 1; i++) {
+          for (let j = -1; j < 2; j++) {
+            if (y + i >= 0 && y + i <= 9 && x + j >= 0 && x + j <= 9)
+              if (this.grid[y + i][x + j] !== null) return;
+          }
         }
 
         for (let i = 0; i < length; i++) {

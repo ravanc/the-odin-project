@@ -1,266 +1,170 @@
-:root {
-    --purple: #c084fc;
-}
-
 *, *::before, *::after {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 body {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
 
-.background-shape {
-    background-color: var(--purple);
-    width: 200vw;
-    height: 80vh;
-    position: absolute;
-    z-index: -999;
-    transform: rotate(-15deg) translate(-20vw, -50vh);
-    box-shadow: 2px 2px 2px var(--purple);
+/* Typography */
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #666;
+    margin: 0 0 1.5rem 0;
+}
+
+h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin: 2.5rem 0 1rem 0;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+p {
+    margin: 0 0 1.5rem 0;
+    color: #555;
 }
 
 /* Header */
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 2rem;
 }
 
-.profile {
-    position: relative;
+/* Links */
+
+a {
+    color: #0066cc;
+    text-decoration: none;
 }
 
-.profile > h1.name {
-    position: absolute;
-    color: white;
-    font-size: 3.5rem;
-    text-shadow: 1px 1px 4px #9ca3af;
+a:hover {
+    text-decoration: underline;
 }
 
-.socials {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    gap: 2rem;
+a:visited {
+    color: #551a8b;
 }
 
-.social-icon {
-    width: 45px;
+/* Lists */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.excerpt {
-    padding: 2rem;
+.social-links {
+    margin: 1rem 0 0 0;
 }
 
-.title {
-    font-size: 4rem;
-}    
-
-.excerpt > .subtitle {
-    margin-top: .5rem;
+.social-links li {
+    display: inline;
+    margin-right: 1rem;
 }
 
-/* Main */
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.social-links li:last-child {
+    margin-right: 0;
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 3rem 1rem;
+.writing-list {
+    margin: 0 0 2rem 0;
 }
 
-.project-cards {
-    display: grid; 
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-template-rows: auto;
+.writing-list li {
+    margin: 0.5rem 0;
 }
 
-/* Blog */
-
-.blog-posts {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.projects-list {
+    margin: 0;
 }
 
-#blog-table {
-    margin: 1rem 0 2rem 0;
-    /* border: 1px solid black; */
-    border-collapse: collapse;
-    width: clamp(40ch, 80%, 100ch);
-    box-shadow: 2px 2px 6px #9ca3af;
+.project {
+    margin: 1.5rem 0;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
 }
 
-#blog-table td {
-    /* border: 1px solid black; */
-    padding: .5rem;
+.project:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
-#blog-table tr:nth-child(even) {
-    background-color: #d7d7d7;
+.project h4 {
+    margin: 0 0 0.5rem 0;
 }
 
-/* Project Card */
-
-.project-card {
-    margin: 1rem;
-    border-radius: 1rem;
-    box-shadow: 1px 1px 5px #9ca3af;
-    overflow: hidden;
-    height: min-content;
+.project p {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.95rem;
 }
-
-.project-thumbnail {
-    background-color: var(--purple);
-    height: 10rem;
-    text-align: center;
-}
-
-.project-details {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    padding: 1rem;
-}
-
 
 .project-links {
-    margin-left: auto;
-    margin-top: 2rem;
-    display: flex;
-    gap: .5rem;
+    font-size: 0.9rem;
+    color: #666;
 }
 
-.project-link {
-    width: 30px;
+.project-links a {
+    color: #666;
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    color: #0066cc;
 }
 
 
 /* Footer */
 
 footer {
-    background-color: var(--purple);
-    width: 100vw;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
 }
 
-.contact-details {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+footer p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
 }
 
-.contact-details > .subtitle {
-    font-size: 1.5rem;
-}
+/* Responsive */
 
-.contact-details > .socials {
-    gap: .2rem;
-}
-
-.contact-details .social-icon {
-    width: 30px;
-}
-
-@media (max-width: 799px) {
-    .background-shape {
-        transform: rotate(-15deg) translate(-20vw, -30vh);
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
     }
-
-    img.headshot {
-        width: 100vw;
-        min-width: 400px;
-        padding: 2rem;
+    
+    h1 {
+        font-size: 1.75rem;
     }
-
-    .profile > h1.name {
-        bottom: 3.5rem;
-        left: 4rem;
+    
+    h2 {
+        font-size: 1.125rem;
     }
-
-    .excerpt {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-photo {
-        width: 100vw;
-    }
-}
-
-@media (min-width: 800px) {
-    .header-container {
-        display: grid;
-        grid-template-columns: min-content 1fr;
-        grid-template-rows: 2rem 1fr 2rem;
-        padding: 4rem;
-    }
-
-    .profile {
-        grid-row: 1 / 4;
-        grid-column: 1 / 2;
-    }
-
-    .excerpt {
-        grid-row: 2 / 3;
-        grid-column: 2 / 3;
-        background-color: white;
-        box-shadow: 2px 2px 4px #9ca3af;
-        display: flex;
-        flex-direction: column;
-        min-width: 600px;
-        max-width: 1000px
-    }
-
-    .excerpt > .socials {
-        margin-top: auto;
-        margin-left: auto;
-    }
-
-    .profile .headshot {
-        width: 360px;
-    }
-
-    .profile > h1.name {
-        bottom: .5rem;
-        right: 1rem;
-    }
-
-    .excerpt {
-        background-color: white;
-    }
-
-    main {
-        max-width: 1360px;
-        padding-bottom: 3rem;
-    }
-
-    footer {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 2rem 0;
-    }
-
-    footer img {
-        max-width: 400px;
-        margin-right: 2rem;
+    
+    .social-links li {
+        margin-right: 0.75rem;
     }
 }

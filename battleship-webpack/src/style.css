@@ -65,6 +65,14 @@
 
 .rotate-button {
     margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #334155;
+    color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
 }
 
 .rotate-button:hover {

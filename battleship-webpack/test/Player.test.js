@@ -10,3 +10,10 @@ test("Places ship correctly", () => {
   expect(playerA.playerBoard.grid[1][5]).not.toBe(null);
   expect(playerA.playerBoard.grid[1][6]).toBe(null);
 });
+
+test("Ship sinks correctly", () => {
+  const playerA = Player();
+  playerA.ships.destroyer.hit();
+  playerA.ships.destroyer.hit();
+  expect(playerA.ships.destroyer.isSunk()).toBe(true);
+});
